@@ -1,4 +1,12 @@
 const path = require('path');
+const autoprefixer = require('autoprefixer');
+const postCSSPlugins = [
+  require('postcss-import'),
+  require('postcss-mixins'),
+  require('postcss-simple-vars'),
+  require('postcss-nested'),
+  require('autoprefixer')
+]
 
 
 module.exports ={
@@ -11,8 +19,18 @@ module.exports ={
   module: {
       rules: [
         {
-          test: /\.css$/i,
-          use: ['style-loader','css-loader']
+          test: /\.(css|scss)$/i,
+          exclude: /node_modules/,
+          use: ['style-loader','css-loader',
+                {
+                  loader: "postcss-loader",
+                  options: {
+                    postcssOptions: {
+                      plugins: postCSSPlugins
+                    }
+                  }
+                }
+        ],
         },
         {
           test: /\.(gif|png|jpg|jpeg|svg)$/i,
@@ -28,7 +46,8 @@ module.exports ={
       path.resolve(__dirname,'src'),
       hot: true,
       port: 3000
-  }
+  },
+ 
 }
 
 

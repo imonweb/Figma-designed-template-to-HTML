@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap');
+@import 'modules/_large-hero';
+*,
+*::before,
+*::afer {
+  box-sizing: border-box;
+}
+ 
+/*  Custom properties */
+ 
+
+body {
+  background-color: salmon;
+  font-family: 'Work Sans', ssans-serif;
+}

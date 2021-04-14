@@ -1,0 +1,18 @@
+*,
+*::before,
+*::afer {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  background-color: gray;
+  font-family: 'Work Sans', ssans-serif;
+  font-size: 1.125rem;
+  color: var(--clr-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, {
+  line-height: 1;
+}

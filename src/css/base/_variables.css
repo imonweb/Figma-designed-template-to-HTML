@@ -1,0 +1,10 @@
+/*  Custom properties */
+:root {
+  --clr-primary: #F70058;
+  --clr-dark: #0C0E36;
+  --clr-light: #FFF;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+  --grid: 1fr;
+}

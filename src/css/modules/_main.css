@@ -1,0 +1,18 @@
+
+.main {
+  padding: 3em 1em 10rem;
+
+  &__title {
+    line-height: 1;
+    font-weight: va(--fw-black);
+    font-size: 3rem;
+  }
+
+  &--ski {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+  }
+}
+
+
+

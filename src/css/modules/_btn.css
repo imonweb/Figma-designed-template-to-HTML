@@ -1,0 +1,33 @@
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: .5em 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  margin-bottom: .75em;
+
+  &--primary {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+  }
+  &:hover {
+    background-color: var(--clr-dark);
+  }
+  &--outline {
+    outline: 3px solid #F70058;
+    outline-offset: -3px;
+    color: #F70058;
+
+    &:hover {
+      background: var(--clr-dark);
+      border-color: var(--clr-dark);
+      color: var(--clr-light);
+    }
+  }
+}
+
+ 

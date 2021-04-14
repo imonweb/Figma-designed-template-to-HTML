@@ -2,6 +2,18 @@
 .main {
   padding: 3em 1em 10rem;
 
+  @mixin atSmall {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(20rem, 50ch) minmax(1em, 3fr );
+    justify-items: start;
+
+    & > * { grid-column: 2 / 3;}
+
+    &--ski {
+      background-position: left bottom;
+    }
+  }
+
   &__title {
     line-height: 1;
     font-weight: va(--fw-black);

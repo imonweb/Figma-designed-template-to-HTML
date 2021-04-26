@@ -30,4 +30,7 @@
   }
 }
 
+.btn + .btn {
+  margin-left: 1em;
+}
  

@@ -6,5 +6,9 @@
   --fw-normal: 400;
   --fw-bold: 700;
   --fw-black: 900;
-  --grid: 1fr;
+  --grid: minmax(1em, 10%) 
+          minmax(10rem, 22ch)
+          minmax(10rem, 23ch) 
+          minmax(1em, 3fr)
+          max-content;
 }
